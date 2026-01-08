@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Load TOC to get proper chapter order
+let tocData = { sections: [] };
+try {
+  const tocModule = await import('../../data/toc.json');
+  tocData = tocModule.default;
+} catch (e) {
+  // TOC not generated
+}
+
+export async function getStaticPaths() {
+  const chapters = await getCollection('chapters');
+  return chapters.map((chapter) => ({
+    // Remove number prefix and .md extension for clean URLs matching TOC slugs
+    params: { slug: chapter.id.replace('.md', '').replace(/^\d+-/, '') },
+    props: { chapter },
+  }));
+}
+
+const { chapter } = Astro.props;
+const { Content } = await chapter.render();
+
+// Build ordered chapter list from TOC
+const orderedSlugs: string[] = [];
+tocData.sections.forEach(section => {
+  section.chapters.forEach(ch => {
+    orderedSlugs.push(ch.slug);
+  });
+});
+
+// Get current chapter slug from ID
+const currentSlug = chapter.id.replace('.md', '').replace(/^\d+-/, '');
+
+// Find previous and next based on TOC order
+const currentIndex = orderedSlugs.indexOf(currentSlug);
+const prevSlug = currentIndex > 0 ? orderedSlugs[currentIndex - 1] : null;
+const nextSlug = currentIndex < orderedSlugs.length - 1 ? orderedSlugs[currentIndex + 1] : null;
+
+// Get actual chapter data for prev/next
+const allChapters = await getCollection('chapters');
+const prevChapter = prevSlug ? allChapters.find(c => c.id.includes(prevSlug)) : null;
+const nextChapter = nextSlug ? allChapters.find(c => c.id.includes(nextSlug)) : null;
+---
+
+<BaseLayout title={chapter.data.title}>
+  <article class="prose">
+    <h1>{chapter.data.title}</h1>
+    <Content />
+  </article>
+
+  <nav class="chapter-nav">
+    {prevChapter ? (
+      <a href={`/chapter/${prevChapter.id.replace('.md', '').replace(/^\d+-/, '')}`} class="nav-prev">
+        ← {prevChapter.data.title}
+      </a>
+    ) : (
+      <div></div>
+    )}
+
+    {nextChapter ? (
+      <a href={`/chapter/${nextChapter.id.replace('.md', '').replace(/^\d+-/, '')}`} class="nav-next">
+        {nextChapter.data.title} →
+      </a>
+    ) : (
+      <div></div>
+    )}
+  </nav>
+</BaseLayout>

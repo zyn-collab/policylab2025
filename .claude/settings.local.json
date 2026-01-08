@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(if not exist input mkdir input)",
+      "Bash(move \"content\\\\NDP rebuild v2.docx\" \"input\\\\NDP rebuild v2.docx\")",
+      "Bash(npm run convert:*)",
+      "Bash(npm run process:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(find:*)",
+      "Bash(npm run clean:*)",
+      "Bash(for file in *.md)",
+      "Bash(do sed -i 's|<img src=\"\"C:\\\\\\\\Users\\\\\\\\User\\\\\\\\OneDrive\\\\\\\\Desktop\\\\\\\\Policy Lab\\\\\\\\Publications\\\\\\\\my-ebook\\\\\\\\temp\\\\\\\\media/media/|<img src=\"\"/media/|g' \"$file\")",
+      "Bash(done)",
+      "Bash(node scripts/fix-image-paths.js:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}

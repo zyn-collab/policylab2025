@@ -1,0 +1,7 @@
+# Place your .docx files here
+
+This directory is where you should place Word documents for conversion.
+
+After adding .docx files here, run:
+1. npm run convert
+2. npm run process

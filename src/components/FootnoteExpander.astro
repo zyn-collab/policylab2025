@@ -1,0 +1,125 @@
+---
+// Inline footnote expander component
+---
+
+<script is:inline>
+  function setupFootnoteExpander() {
+    // Find all footnote reference links (remark-gfm uses #user-content-fn- prefix)
+    const footnoteRefs = document.querySelectorAll('a[href^="#user-content-fn-"]');
+
+    footnoteRefs.forEach(ref => {
+      // Remove any existing listeners by cloning
+      const newRef = ref.cloneNode(true);
+      ref.parentNode?.replaceChild(newRef, ref);
+
+      newRef.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const footnoteId = newRef.getAttribute('href')?.substring(1);
+        if (!footnoteId) return;
+
+        console.log('Footnote clicked:', footnoteId);
+
+        // Find the containing paragraph
+        const paragraph = newRef.closest('p');
+        if (!paragraph) {
+          console.log('No paragraph found');
+          return;
+        }
+
+        // Check if already expanded - look for expansion after this paragraph
+        const nextElement = paragraph.nextElementSibling;
+        if (nextElement?.classList.contains('footnote-expansion')) {
+          console.log('Removing existing expansion');
+          nextElement.remove();
+          return;
+        }
+
+        // Find the footnote content
+        const footnoteItem = document.getElementById(footnoteId);
+        if (!footnoteItem) {
+          console.log('Footnote item not found:', footnoteId);
+          return;
+        }
+
+        // Get footnote text (exclude the back-reference)
+        const footnoteContent = footnoteItem.cloneNode(true);
+        const backref = footnoteContent.querySelector('.footnote-backref');
+        if (backref) backref.remove();
+
+        // Get the visible footnote number from the link text
+        const footnoteNumber = newRef.textContent.trim();
+
+        // Create expansion element as a div
+        const expansion = document.createElement('div');
+        expansion.className = 'footnote-expansion';
+        expansion.innerHTML = `<strong>[${footnoteNumber}]</strong> ${footnoteContent.innerHTML}`;
+
+        console.log('Inserting expansion after paragraph');
+        // Insert after the paragraph
+        paragraph.parentNode?.insertBefore(expansion, paragraph.nextSibling);
+      });
+    });
+  }
+
+  // Run on initial load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupFootnoteExpander);
+  } else {
+    setupFootnoteExpander();
+  }
+
+  // Re-run after Astro page transitions (if using view transitions)
+  document.addEventListener('astro:page-load', setupFootnoteExpander);
+</script>
+
+<style is:global>
+  .footnote-expansion {
+    display: block !important;
+    margin: 1.5rem 4rem 1.5rem 4rem !important;
+    padding: 1rem 1.5rem !important;
+    background-color: var(--bg-secondary) !important;
+    border-left: 3px solid var(--accent) !important;
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-size: 0.75rem !important;
+    line-height: 1.6 !important;
+    color: var(--text-primary) !important;
+    border-radius: 3px !important;
+    width: auto !important;
+    max-width: none !important;
+    animation: expandIn 0.2s ease-out;
+  }
+
+  @keyframes expandIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .footnote-expansion p {
+    margin: 0;
+    display: inline;
+  }
+
+  .footnote-expansion a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  /* Make footnote refs clickable/hoverable */
+  .prose a[href^="#user-content-fn-"] {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .prose a[href^="#user-content-fn-"]:hover {
+    color: var(--accent-hover);
+  }
+</style>

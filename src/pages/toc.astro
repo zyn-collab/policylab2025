@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Load TOC data
+let tocData = { sections: [] };
+try {
+  const tocModule = await import('../data/toc.json');
+  tocData = tocModule.default;
+} catch (e) {
+  // TOC not yet generated
+}
+---
+
+<BaseLayout title="Table of Contents">
+  <div class="toc-page">
+    <h1 class="toc-title">Table of Contents</h1>
+
+    {tocData.sections.map((section, sectionIdx) => (
+      <div class="toc-section">
+        <h2 class="toc-section-title">{section.title}</h2>
+        <ul class="toc-chapter-list">
+          {section.chapters.map((chapter, chapterIdx) => (
+            <li class="toc-chapter-item">
+              <a href={`/chapter/${chapter.slug}`} class="toc-chapter-link">
+                <span class="toc-chapter-number">{sectionIdx + 1}.{chapterIdx + 1}</span>
+                <span>{chapter.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</BaseLayout>
