@@ -1,0 +1,269 @@
+{
+  "sections": [
+    {
+      "title": "INTRODUCTION",
+      "chapters": [
+        {
+          "title": "How to read this document",
+          "slug": "how-to-read-this-document",
+          "order": 1
+        },
+        {
+          "title": "The need to prioritize",
+          "slug": "the-need-to-prioritize",
+          "order": 2
+        },
+        {
+          "title": "Public Policy Lab frameworks",
+          "slug": "public-policy-lab-frameworks",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "title": "ECONOMIC DIVERSIFICATION",
+      "chapters": [
+        {
+          "title": "Economic diversification and decentralization",
+          "slug": "economic-diversification-and-decentralization",
+          "order": 1
+        },
+        {
+          "title": "Hanimaadhoo Airport as a low-cost-carrier hub",
+          "slug": "hanimaadhoo-airport-as-a-low-cost-carrier-hub",
+          "order": 2
+        },
+        {
+          "title": "Remote work visa program",
+          "slug": "remote-work-visa-program",
+          "order": 3
+        },
+        {
+          "title": "Remote office spaces in islands",
+          "slug": "remote-office-spaces-in-islands",
+          "order": 4
+        },
+        {
+          "title": "3D printing and CNC mini-factories",
+          "slug": "3d-printing-and-cnc-mini-factories",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "title": "HOUSING & LIVABLE CITIES",
+      "chapters": [
+        {
+          "title": "Housing is everything",
+          "slug": "housing-is-everything",
+          "order": 1
+        },
+        {
+          "title": "Third spaces, vibrant cities",
+          "slug": "third-spaces-vibrant-cities",
+          "order": 2
+        },
+        {
+          "title": "Cities built for human beings",
+          "slug": "cities-built-for-human-beings",
+          "order": 3
+        },
+        {
+          "title": "Space usage by street parking in Male' City",
+          "slug": "space-usage-by-street-parking-in-male-city",
+          "order": 4
+        },
+        {
+          "title": "Improving public transport routes in Male' City",
+          "slug": "improving-public-transport-routes-in-male-city",
+          "order": 5
+        },
+        {
+          "title": "Simple estimation of greenery in Male' City",
+          "slug": "simple-estimation-of-greenery-in-male-city",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "title": "SOCIAL POLICIES",
+      "chapters": [
+        {
+          "title": "Quality education for everyone",
+          "slug": "quality-education-for-everyone",
+          "order": 1
+        },
+        {
+          "title": "Strong focus on basic numeracy",
+          "slug": "strong-focus-on-basic-numeracy",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "title": "TECHNOLOGY & GOVERNANCE",
+      "chapters": [
+        {
+          "title": "Intro to LLMs for policymakers",
+          "slug": "intro-to-llms-for-policymakers",
+          "order": 1
+        },
+        {
+          "title": "Human rules in an AI world",
+          "slug": "human-rules-in-an-ai-world",
+          "order": 2
+        },
+        {
+          "title": "Resilient and self-reliant",
+          "slug": "resilient-and-self-reliant",
+          "order": 3
+        },
+        {
+          "title": "Cleaning up politics",
+          "slug": "cleaning-up-politics",
+          "order": 4
+        },
+        {
+          "title": "Digitalization with purpose",
+          "slug": "digitalization-with-purpose",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "title": "SUMMARY ANALYSES",
+      "chapters": [
+        {
+          "title": "Trends over the next 15 years",
+          "slug": "trends-over-the-next-15-years",
+          "order": 1
+        },
+        {
+          "title": "Preparing for the unknown",
+          "slug": "preparing-for-the-unknown",
+          "order": 2
+        },
+        {
+          "title": "Current policy consensus in the Maldives",
+          "slug": "current-policy-consensus-in-the-maldives",
+          "order": 3
+        },
+        {
+          "title": "Overview of international best practices",
+          "slug": "overview-of-international-best-practices",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "title": "POLICY TOOLS",
+      "chapters": [
+        {
+          "title": "SOP for remote office hubs",
+          "slug": "sop-for-remote-office-hubs",
+          "order": 1
+        },
+        {
+          "title": "Remote office hub license agreement",
+          "slug": "remote-office-hub-license-agreement",
+          "order": 2
+        },
+        {
+          "title": "Remote hiring brochure for companies",
+          "slug": "remote-hiring-brochure-for-companies",
+          "order": 3
+        },
+        {
+          "title": "Remote work visa bill",
+          "slug": "remote-work-visa-bill",
+          "order": 4
+        },
+        {
+          "title": "Application form for remote work visas",
+          "slug": "application-form-for-remote-work-visas",
+          "order": 5
+        },
+        {
+          "title": "Standard tenancy agreements",
+          "slug": "standard-tenancy-agreements",
+          "order": 6
+        },
+        {
+          "title": "Pedagogical toolkit for math fundamentals",
+          "slug": "pedagogical-toolkit-for-math-fundamentals",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "title": "TO DRIVE DISCUSSION",
+      "chapters": [
+        {
+          "title": "Treating climate as a crisis",
+          "slug": "treating-climate-as-a-crisis",
+          "order": 1
+        },
+        {
+          "title": "Health policy issues of the future",
+          "slug": "health-policy-issues-of-the-future",
+          "order": 2
+        },
+        {
+          "title": "Pro-social policy for a healthy society",
+          "slug": "pro-social-policy-for-a-healthy-society",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "title": "ESSAYS ON POLITICS",
+      "chapters": [
+        {
+          "title": "Decolonization and the Maldives",
+          "slug": "decolonization-and-the-maldives",
+          "order": 1
+        },
+        {
+          "title": "Global Movements and Maldivian Politics",
+          "slug": "global-movements-and-maldivian-politics",
+          "order": 2
+        },
+        {
+          "title": "The Uncontested Future",
+          "slug": "the-uncontested-future",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "title": "ABOUT PUBLIC POLICY LAB",
+      "chapters": [
+        {
+          "title": "Who we are",
+          "slug": "who-we-are",
+          "order": 1
+        },
+        {
+          "title": "The Policy Lab team",
+          "slug": "the-policy-lab-team",
+          "order": 2
+        },
+        {
+          "title": "Services",
+          "slug": "services",
+          "order": 3
+        },
+        {
+          "title": "Product catalogue",
+          "slug": "product-catalogue",
+          "order": 4
+        },
+        {
+          "title": "Annual report",
+          "slug": "annual-report",
+          "order": 5
+        }
+      ]
+    }
+  ]
+}

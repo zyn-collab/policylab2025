@@ -31,9 +31,3 @@ yarn-debug.log*
 yarn-error.log*
 
 # Output from scripts
-src/content/chapters/*.md
-src/data/toc.json
-
-# Keep sample files
-!src/content/chapters/001-introduction.md
-!src/content/chapters/002-getting-started.md
