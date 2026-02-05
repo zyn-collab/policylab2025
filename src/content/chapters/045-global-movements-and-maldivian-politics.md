@@ -1,7 +1,7 @@
 ---
 title: "Global Movements and Maldivian Politics"
 section: "ESSAYS"
-order: 2
+order: 1
 slug: "global-movements-and-maldivian-politics"
 ---
 The Maldives exists at a particular political moment: a young democracy with a young population, no stable ideological base across parties, high digital connectivity, and a political class that frequently borrows strategies and rhetoric from successful movements elsewhere. This creates conditions where global political trends are closely watched by those with political ambitions, making an assessment of how these movements might translate to local conditions both timely and necessary.

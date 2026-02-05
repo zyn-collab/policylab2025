@@ -1,11 +1,10 @@
 ---
-title: "Decolonization and the Maldives"
+title: "Liberating the Body Politic: Discussion Transcript"
 section: "ESSAYS"
-order: 1
+order: 2
 slug: "decolonization-and-the-maldives"
 ---
-
-# Decolonization and the Maldives
+*[Note: This essay is an edited transcript from talks and panel discussions that we had in Indonesia on themes of decolonization and Global South solidarity].*
 
 ## The expansive view of colonizer relations
 
