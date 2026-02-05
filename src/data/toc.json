@@ -216,16 +216,16 @@
       ]
     },
     {
-      "title": "ESSAYS ON POLITICS",
+      "title": "ESSAYS",
       "chapters": [
-        {
-          "title": "Decolonization and the Maldives",
-          "slug": "decolonization-and-the-maldives",
-          "order": 1
-        },
         {
           "title": "Global Movements and Maldivian Politics",
           "slug": "global-movements-and-maldivian-politics",
+          "order": 1
+        },
+        {
+          "title": "Liberating the Body Politic: Discussion Transcript",
+          "slug": "decolonization-and-the-maldives",
           "order": 2
         },
         {
@@ -239,29 +239,14 @@
       "title": "ABOUT PUBLIC POLICY LAB",
       "chapters": [
         {
-          "title": "Who we are",
-          "slug": "who-we-are",
+          "title": "About Public Policy Lab",
+          "slug": "about-public-policy-lab",
           "order": 1
         },
         {
           "title": "The Policy Lab team",
           "slug": "the-policy-lab-team",
           "order": 2
-        },
-        {
-          "title": "Services",
-          "slug": "services",
-          "order": 3
-        },
-        {
-          "title": "Product catalogue",
-          "slug": "product-catalogue",
-          "order": 4
-        },
-        {
-          "title": "Annual report",
-          "slug": "annual-report",
-          "order": 5
         }
       ]
     }
