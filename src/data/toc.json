@@ -9,14 +9,69 @@
           "order": 1
         },
         {
-          "title": "The need to prioritize",
-          "slug": "the-need-to-prioritize",
+          "title": "Public Policy Lab frameworks",
+          "slug": "public-policy-lab-frameworks",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "title": "LIVABLE CITIES",
+      "chapters": [
+        {
+          "title": "Housing is everything",
+          "slug": "housing-is-everything",
+          "order": 1
+        },
+        {
+          "title": "Third spaces, vibrant cities",
+          "slug": "third-spaces-vibrant-cities",
           "order": 2
         },
         {
-          "title": "Public Policy Lab frameworks",
-          "slug": "public-policy-lab-frameworks",
+          "title": "Cities built for human beings",
+          "slug": "cities-built-for-human-beings",
           "order": 3
+        },
+        {
+          "title": "Improving public transport routes in Male' City",
+          "slug": "improving-public-transport-routes-in-male-city",
+          "order": 4
+        },
+        {
+          "title": "The art scene and city culture",
+          "slug": "third_spaces_art_city",
+          "order": 5
+        },
+        {
+          "title": "PPL community events",
+          "slug": "ppl_community_events",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "title": "SOCIAL POLICIES",
+      "chapters": [
+        {
+          "title": "Quality education for everyone",
+          "slug": "quality-education-for-everyone",
+          "order": 1
+        },
+        {
+          "title": "Strong focus on basic numeracy",
+          "slug": "strong-focus-on-basic-numeracy",
+          "order": 2
+        },
+        {
+          "title": "Elderly pick-up drop-off services",
+          "slug": "elderly_pick_up_drop_off",
+          "order": 3
+        },
+        {
+          "title": "Senior livability in housing complexes",
+          "slug": "senior_livability_in_housing_complexes",
+          "order": 4
         }
       ]
     },
@@ -51,56 +106,6 @@
       ]
     },
     {
-      "title": "HOUSING & LIVABLE CITIES",
-      "chapters": [
-        {
-          "title": "Housing is everything",
-          "slug": "housing-is-everything",
-          "order": 1
-        },
-        {
-          "title": "Third spaces, vibrant cities",
-          "slug": "third-spaces-vibrant-cities",
-          "order": 2
-        },
-        {
-          "title": "Cities built for human beings",
-          "slug": "cities-built-for-human-beings",
-          "order": 3
-        },
-        {
-          "title": "Space usage by street parking in Male' City",
-          "slug": "space-usage-by-street-parking-in-male-city",
-          "order": 4
-        },
-        {
-          "title": "Improving public transport routes in Male' City",
-          "slug": "improving-public-transport-routes-in-male-city",
-          "order": 5
-        },
-        {
-          "title": "Simple estimation of greenery in Male' City",
-          "slug": "simple-estimation-of-greenery-in-male-city",
-          "order": 6
-        }
-      ]
-    },
-    {
-      "title": "SOCIAL POLICIES",
-      "chapters": [
-        {
-          "title": "Quality education for everyone",
-          "slug": "quality-education-for-everyone",
-          "order": 1
-        },
-        {
-          "title": "Strong focus on basic numeracy",
-          "slug": "strong-focus-on-basic-numeracy",
-          "order": 2
-        }
-      ]
-    },
-    {
       "title": "TECHNOLOGY & GOVERNANCE",
       "chapters": [
         {
@@ -131,6 +136,31 @@
       ]
     },
     {
+      "title": "PUBLIC SECTOR EFFICIENCY",
+      "chapters": [
+        {
+          "title": "Knowledge management repository",
+          "slug": "knowledge_management_repository",
+          "order": 1
+        },
+        {
+          "title": "Institutional memory preservation",
+          "slug": "institutional_memory_preservation",
+          "order": 2
+        },
+        {
+          "title": "Pro bono capacity support",
+          "slug": "pro_bono_capacity_support",
+          "order": 3
+        },
+        {
+          "title": "Standard prompter tools",
+          "slug": "standard_prompter",
+          "order": 4
+        }
+      ]
+    },
+    {
       "title": "SUMMARY ANALYSES",
       "chapters": [
         {
@@ -152,6 +182,66 @@
           "title": "Overview of international best practices",
           "slug": "overview-of-international-best-practices",
           "order": 4
+        }
+      ]
+    },
+    {
+      "title": "TO DRIVE DISCUSSION",
+      "chapters": [
+        {
+          "title": "Treating climate as a crisis",
+          "slug": "treating-climate-as-a-crisis",
+          "order": 1
+        },
+        {
+          "title": "Health policy issues of the future",
+          "slug": "health-policy-issues-of-the-future",
+          "order": 2
+        },
+        {
+          "title": "Pro-social policy for a healthy society",
+          "slug": "pro-social-policy-for-a-healthy-society",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "title": "INVESTIGATIONS",
+      "chapters": [
+        {
+          "title": "Space usage by street parking in Male' City",
+          "slug": "space-usage-by-street-parking-in-male-city",
+          "order": 1
+        },
+        {
+          "title": "Simple estimation of greenery in Male' City",
+          "slug": "simple-estimation-of-greenery-in-male-city",
+          "order": 2
+        },
+        {
+          "title": "Nutrition data for Maldivian shorteats",
+          "slug": "maldivian-shorteats-nutrition",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "title": "ESSAYS & ARTICLES",
+      "chapters": [
+        {
+          "title": "Global Movements and Maldivian Politics",
+          "slug": "global-movements-and-maldivian-politics",
+          "order": 1
+        },
+        {
+          "title": "Liberating the Body Politic: Discussion Transcript",
+          "slug": "decolonization-and-the-maldives",
+          "order": 2
+        },
+        {
+          "title": "The Uncontested Future",
+          "slug": "the-uncontested-future",
+          "order": 3
         }
       ]
     },
@@ -192,46 +282,6 @@
           "title": "Pedagogical toolkit for math fundamentals",
           "slug": "pedagogical-toolkit-for-math-fundamentals",
           "order": 7
-        }
-      ]
-    },
-    {
-      "title": "TO DRIVE DISCUSSION",
-      "chapters": [
-        {
-          "title": "Treating climate as a crisis",
-          "slug": "treating-climate-as-a-crisis",
-          "order": 1
-        },
-        {
-          "title": "Health policy issues of the future",
-          "slug": "health-policy-issues-of-the-future",
-          "order": 2
-        },
-        {
-          "title": "Pro-social policy for a healthy society",
-          "slug": "pro-social-policy-for-a-healthy-society",
-          "order": 3
-        }
-      ]
-    },
-    {
-      "title": "ESSAYS",
-      "chapters": [
-        {
-          "title": "Global Movements and Maldivian Politics",
-          "slug": "global-movements-and-maldivian-politics",
-          "order": 1
-        },
-        {
-          "title": "Liberating the Body Politic: Discussion Transcript",
-          "slug": "decolonization-and-the-maldives",
-          "order": 2
-        },
-        {
-          "title": "The Uncontested Future",
-          "slug": "the-uncontested-future",
-          "order": 3
         }
       ]
     },
